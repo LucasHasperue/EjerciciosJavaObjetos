@@ -11,14 +11,18 @@ Método perimetro(): para calcular el perímetro (Perimetro=2*π*radio).
 
 package MainCircunferencia;
 
-import java.util.Scanner;
+import Entidades.Circunferencia;
+
 
 public class CalculoCircunferencia {
 
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
-        crearCircunferencia = new crearCircunferencia();
-        perimetro = new perimetro();
+       
+        Circunferencia Circulo = new Circunferencia(0);
+        
+        Circulo.crearCircunferencia();
+        Circulo.calcularPerimetro();
+        Circulo.area();
         
         
     }

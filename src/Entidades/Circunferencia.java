@@ -19,6 +19,8 @@ public class Circunferencia {
         this.radio = radio;
     }
 
+   
+
     public double getRadio() {
         return radio;
     }
@@ -29,17 +31,19 @@ public class Circunferencia {
     
     public void crearCircunferencia() {
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese el radio");
+        System.out.println("Ingrese el radio: ");
         radio = leer.nextDouble();
     }    
     
     public void area() {
         double area = Math.PI*(Math.pow(this.radio, 2));
-        System.out.println("El area de la circunferencia es: "+area);
+        System.out.println("El area de la circunferencia es: " + area);
     }
     
-    public void perimetro() {
+    public void calcularPerimetro() {
         double perimetro = Math.PI*2*radio;
-        System.out.println("El perimetro de la circunferencia es: "+perimetro);
+        System.out.println("El perimetro de la circunferencia es: " + perimetro);
     }
+
+    
 }
